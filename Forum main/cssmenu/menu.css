@@ -1,0 +1,111 @@
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: 1000;
+}
+nav ul {
+  padding-left: 7%;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav ul li a:hover{
+   text-decoration: none;
+}
+nav span#openup {
+  padding-top: 10px;
+  height: 50px;
+  padding-left: 20px;
+  display: none;
+}
+nav ul #mnlogin{
+  float: right;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.8em;
+  }
+nav ul #mnlogin{
+  display: none;
+}
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    padding: 0px;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav span#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    margin-top: 0px;
+  }
+  nav span#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */

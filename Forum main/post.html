@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forum Văn Thanh 2018</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="cssmenu/menu.css">
+	<link rel="stylesheet" type="text/css" href="csspost/userinfo.css">
+	<link rel="stylesheet" type="text/css" href="csspost/post.css">
+	<script type="text/javascript" src="cssmenu/script.js"></script>
+</head>
+<body>
+	<div class="head-info">
+		<nav class='cf'>
+			<ul class='cf'>
+				<li>
+					<a href='#'><i class="fa fa-home"></i>&nbsp;&nbsp; Home</a>
+				</li>
+				<li>
+					<a href='#'><i class="fa fa-home"></i>&nbsp;&nbsp;Item 1</a>
+				</li>
+				<li>
+					<a href='#'><i class="fa fa-home"></i>&nbsp;&nbsp;Item 2</a>
+				</li>
+				<li>
+					<a href='#'><i class="fa fa-home"></i>&nbsp;&nbsp;Item 3</a>
+				</li>
+				<li id="mnlogin"><a href="#"></a></li>
+				<li id="mnlogin"  data-toggle="modal" data-target="#login" ><a href="#"><i class="fa fa-user" ></i>&nbsp;&nbsp;Login</a></li>
+			</ul>
+			<span id="openup">VTeam.com <span id="spnlogin" style="float: right; padding-right: 20%;"><i class="fa fa-user"></i></span></span>
+		</nav>
+		<div class="modal fade" id="login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Đăng nhập</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						<form action="#">
+							<div class="form-group">
+								<label>Username :</label>
+								<input class="form-control" type="text" name="">
+							</div>
+							<div class="form-group">
+								<label>
+									Password :
+								</label>
+								<input class="form-control" type="password" name="">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox"> Remember me
+								</label>
+							</div>
+						</form>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Đăng nhập</button>
+						<button type="button" class="btn btn-success" data-dismiss="modal">Đăng ký</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="head" style="height: 300px;margin-top: 10px;background-color: #7B4890;width: 100%;">
+		</div>
+		<div class="search" style="height: 20%;background-color: #222C37;">
+			<div style="padding-top: 1%;">
+				<form action="" method="get">
+					<div class="form-group row" >
+						<div class="col-sm-1">
+							
+						</div>
+						<div class="col-sm-6">
+							<div class="input-group" style="font-size: 10px;height: 35px;">
+								<span class="input-group-addon"><i class="fa fa-search"></i></span>
+								<input name="search" type="text" placeholder="Tìm kiếm . . . " class="form-control"/>
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-primary" style="width: 60px;"><i class="fa fa-search" ></i></button>
+									<!-- <i class="fa fa-search" ></i> -->
+								</span>
+
+							</div>
+
+						</div>
+						<div class="col-sm-3">
+							<button class="btn btn-primary" id="icosearch">
+								<i class="fa fa-th-list"></i> &nbsp; Danh mục câu hỏi
+							</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="body" style="background-color: #F4F4F4; ">
+		<div class="container" >
+			<div style="height: 20px;width: 100%;">
+				
+			</div>
+			<div class="row">
+				<div class="col-sm-9" style="border:1px solid #ccc!important; background-color: white;box-shadow: 1px 1px 1px 2px #A9A9A9;">
+					<a href="#">Trang chủ</a> &nbsp;>&nbsp;<a href="#">Danh mục</a> &nbsp;>&nbsp;<a href="#">Câu hỏi</a>
+					<hr>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="card_user">
+								<div class="img">
+									<img src="src/avatar.png">
+								</div>
+								<div class="user_info">
+									<img src="src/online.png" width="8px" height="8px">
+									<span class="user_name">
+										<a href="#"><strong>Nhoknhoe</strong></a>
+										<span class="user_level">(Administrator)
+										</span>
+									</span> 
+									<span class="user_gender">
+										Gender : Nữ
+									</span> |
+									<span class="user_point">
+										Point : 2000
+									</span>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9" id="post">
+							<div class="post_content">
+								<h1>
+									Mô hình Unity->Azure SQL-> SQL server
+								</h1>
+								
+								<p>
+									Chào Kteam!<br>
+
+									Hiện tại nhóm em đang làm một game nhỏ trên Unity, tụi em định lưu database trên Azure, tụi em đã truyền được dữ liệu lên rồi, nhưng việc lấy về như thế nào ạ, và việc liên kết SQL server và Azure thì Unity sẽ thao tác với cái nào ạ
+
+									Mấy anh tư vấn giúp em
+								</p>
+								<p>
+									Em chào anh chị, tình hình em có đang thực hành thử một chương trình hỗ trợ học tập bằng C# mà phát sinh 2 vấn đề mong anh chị hỗ trợ<br>
+
+									VẤN ĐỀ 1. <br>
+									Chương trình em làm có phát sinh một số dữ liệu như:<br>
+
+									Dữ liệu cần bảo mật do chứa thông tin nhạy cảm để người ta không mò vào file xem bình thường đc. Ví dụ: thông tin về user, password, hoặc các ghi chú mật bị khóa,...<br>
+									Dữ liệu bình thường khỏi bảo mật cũng được. Ví dụ như lịch thi, điểm số,...
+									Do là chỉ chạy vòng vòng máy nên em dự định không dùng SQL (em cảm thấy SQL trong trường hợp chương trình của em "hơi thừa" @@ có gì mong anh chị chỉ giáo) cho nên em đang phân vân việc tổ chức lưu dữ liệu ra ổ cứng như thế nào ạ, nhất là các dữ liệu cần bảo mật thì làm cách làm lưu ra mà user ko thể xem một cách bình thường ạ.<br>
+
+									VẤN ĐỀ 2. <br>
+									Em còn dự định làm chức năng đồng bộ hóa, và dự định sử dụng firebase hoặc mysql thông qua api để đồng bộ thông tin có được không ạ. Em hơi phân vân giữa firebase và mysql, mysql thì em biết rồi nhưng firebase em còn hơi mông lung, ko biết nó có thể lưu trữ trong trường hợp của em được ko (dữ liệu ko lớn, không quan hệ) hay chỉ dành cho các trường hợp realtime?<br>
+
+									Mong anh chị đã từng gặp qua cho em ý kiến hay keyword cũng được ạ, em đội ơn anh chị.<br>
+
+									c# mysql firebase
+								</p>
+							</div>
+							<div class="post_footer">
+								<img src="src/thanks.png" width="26px" height="26px">
+								<a href="#"> <strong>Thanks</strong></a>&nbsp;&nbsp;&nbsp;
+								<img src="src/comment.png" width="26px" height="26px">
+								<a href="#"><strong>Trả lời</strong></a>
+								
+							</div>
+
+						</div>
+
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="card_user">
+								<div class="img">
+									<img src="src/avatar.png">
+								</div>
+								<div class="user_info">
+									<img src="src/online.png" width="8px" height="8px">
+									<span class="user_name">
+										<a href="#"><strong>Nhoknhoe</strong></a>
+										<span class="user_level">(Administrator)
+										</span>
+									</span> 
+									<span class="user_gender">
+										Gender : Nam
+									</span> |
+									<span class="user_point">
+										Point : 2000
+									</span>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9" id="post">
+							<div class="post_content">
+								
+								<p>
+									Chào Kteam!<br>
+
+									Hiện tại nhóm em đang làm một game nhỏ trên Unity, tụi em định lưu database trên Azure, tụi em đã truyền được dữ liệu lên rồi, nhưng việc lấy về như thế nào ạ, và việc liên kết SQL server và Azure thì Unity sẽ thao tác với cái nào ạ
+
+									Mấy anh tư vấn giúp em
+								</p>
+								<p>
+									Em chào anh chị, tình hình em có đang thực hành thử một chương trình hỗ trợ học tập bằng C# mà phát sinh 2 vấn đề mong anh chị hỗ trợ<br>
+
+									VẤN ĐỀ 1. <br>
+									Chương trình em làm có phát sinh một số dữ liệu như:<br>
+
+									Dữ liệu cần bảo mật do chứa thông tin nhạy cảm để người ta không mò vào file xem bình thường đc. Ví dụ: thông tin về user, password, hoặc các ghi chú mật bị khóa,...<br>
+									Dữ liệu bình thường khỏi bảo mật cũng được. Ví dụ như lịch thi, điểm số,...
+									Do là chỉ chạy vòng vòng máy nên em dự định không dùng SQL (em cảm thấy SQL trong trường hợp chương trình của em "hơi thừa" @@ có gì mong anh chị chỉ giáo) cho nên em đang phân vân việc tổ chức lưu dữ liệu ra ổ cứng như thế nào ạ, nhất là các dữ liệu cần bảo mật thì làm cách làm lưu ra mà user ko thể xem một cách bình thường ạ.<br>
+
+									VẤN ĐỀ 2. <br>
+									Em còn dự định làm chức năng đồng bộ hóa, và dự định sử dụng firebase hoặc mysql thông qua api để đồng bộ thông tin có được không ạ. Em hơi phân vân giữa firebase và mysql, mysql thì em biết rồi nhưng firebase em còn hơi mông lung, ko biết nó có thể lưu trữ trong trường hợp của em được ko (dữ liệu ko lớn, không quan hệ) hay chỉ dành cho các trường hợp realtime?<br>
+
+									Mong anh chị đã từng gặp qua cho em ý kiến hay keyword cũng được ạ, em đội ơn anh chị.<br>
+
+									c# mysql firebase
+								</p>
+							</div>
+							<div class="post_footer">
+								<a href="#"><strong>Thanks</strong></a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-3" >
+					<div class="row">
+						<div class="col-sm-2">
+							
+						</div>
+						<div class="col-sm-10" style="background-color: white;box-shadow: 1px 1px 1px 2px #A9A9A9;border:1px solid #ccc!important;">
+							<h4>Câu hỏi liên quan<br></h4>
+							<hr>
+							<ul>
+								<li>
+									<a href="#">Câu hỏi 1</a>
+								</li>
+								<li>
+									<a href="#">Câu hỏi 2</a>
+								</li>
+								<li>
+									<a href="#">Câu hỏi 3</a>
+								</li>
+								<li>
+									<a href="#">Câu hỏi 1</a>
+								</li>
+								<li>
+									<a href="#">Câu hỏi 2</a>
+								</li>
+								<li>
+									<a href="#">Câu hỏi 3</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="height: 20px;">
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer" style="background-color:#222C37;text-align: center;height: 100px;width: 100%;color: white;">
+		@Copyring by Nguyễn Văn Thanh
+	</div>
+</body>
+</html>
